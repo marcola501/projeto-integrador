@@ -5,13 +5,15 @@ function alterarlayout(){
         nav.style.fontSize = '0.6rem';
         nav.style.flexDirection = 'column';
         nav.style.height = 'auto';
-        nav.style.alignItems = 'center'; 
+        nav.style.alignItems = 'left'; 
+        nav.style.justifyContent = 'left';
     }
     else{
         nav.style.fontSize = '1rem';
         nav.style.alignItems = 'space-between';
         nav.style.flexDirection = 'row';
         nav.style.height = '10vh';
+        nav.style.justifyContent = 'space-between';
     }
     const paragrafos = document.querySelectorAll('.conteudo');
     if (largura < 769) {
