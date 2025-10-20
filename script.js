@@ -13,7 +13,7 @@ function alterarlayout(){
         nav.style.alignItems = 'space-between';
         nav.style.flexDirection = 'row';
         nav.style.height = '10vh';
-        nav.style.justifyContent = 'space-evelyn';
+        nav.style.justifyContent = 'space-evenly';
     }
     const paragrafos = document.querySelectorAll('.conteudo');
     if (largura < 769) {
