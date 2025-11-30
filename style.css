@@ -13,7 +13,8 @@ img{
 }
 body {
     overflow-x: hidden;
-    height: 100vh;
+    
+    min-height: 100v;
     width: 100%;
     background: linear-gradient(135deg, #051f20 0%, #0b2b26 60%, #235347 100%);
     
@@ -76,7 +77,7 @@ h1{
 .conteudo p{
     width: 100%;
     max-width: 800px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     padding: 0 20px;
     margin: 1%;
