@@ -83,6 +83,16 @@ h1{
     margin: 1%;
     margin-bottom: 3%;
 }
+.fontes a{
+    color: #daf1de;
+    font-size: 16px;
+}
+.fontes a:hover{
+    color: #8eb69b;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.4s;
+}
 #sobre{
     margin-top: 5%;
 }
