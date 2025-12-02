@@ -2,7 +2,7 @@ function alterarlayout(){
     const largura = document.documentElement.clientWidth;//pega a largura da tela
     const nav = document.querySelector('nav')//pega o elemento nav
     if (largura < 769) {//se a largura for menor que 769px
-        nav.style.fontSize = '0.4rem';//altera o tamanho da fonte
+        nav.style.fontSize = '0.1rem';//altera o tamanho da fonte
         nav.style.flexDirection = 'column';//altera a direção do flexbox
         nav.style.height = 'auto';//altera a altura do nav
         nav.style.alignItems = 'left'; //altera o alinhamento dos itens
