@@ -24,9 +24,9 @@ function alterarlayout(){
     }
     const paragrafos = document.querySelectorAll('section .conteudo');//pega todos os elementos com a classe paragrafo dentro de section
     if (largura < 769) {//769px
-        paragrafos.style.fontSize = '0.1rem'
         paragrafos.forEach(p => {
             p.style.flexDirection = 'column';//altera a direção do flexbox
+            paragrafos.style.fontSize = '0.1rem'
         });
     }
     else{
