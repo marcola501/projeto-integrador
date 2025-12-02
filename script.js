@@ -22,7 +22,7 @@ function alterarlayout(){
         nav.style.height = '9vh';//altera a altura do nav
         nav.style.justifyContent = 'space-evenly';//altera a justificação dos itens
     }
-    const paragrafos = document.querySelectorAll('.conteudo');
+    const paragrafos = document.querySelectorAll('section .conteudo');//pega todos os elementos com a classe paragrafo dentro de section
     if (largura < 769) {//769px
         paragrafos.forEach(p => {
             p.style.flexDirection = 'column';//altera a direção do flexbox
@@ -40,6 +40,7 @@ function alterarlayout(){
     else{
         sobre.style.marginTop = '5%';
     }
+    
 };
 
 window.addEventListener('resize', alterarlayout);
