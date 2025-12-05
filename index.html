@@ -105,6 +105,46 @@
 
     
 
+
+
+
+<!-- AVISO DE COOKIES -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-family: Arial;
+  z-index: 9999;
+  display: none;
+">
+  Este site usa cookies para melhorar sua experiência.
+  <a href="privacidade.html" style="color: #00f; margin-left: 10px;">Saiba mais</a>
+  <button onclick="aceitarCookies()" style="
+    margin-left: 15px;
+    padding: 7px 15px;
+    border: none;
+    background: green;
+    color: white;
+    cursor: pointer;
+  ">
+    Aceitar
+  </button>
+</div>
+
+<script>
+function aceitarCookies() {
+  localStorage.setItem("cookiesAceitos", "sim");
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+if (!localStorage.getItem("cookiesAceitos")) {
+  document.getElementById("cookie-banner").style.display = "block";
+}
+</script>
 </body>
 </html>
 
