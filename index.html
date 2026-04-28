@@ -14,6 +14,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Ações da COP30</title>
     <link rel="icon" href="imagens/cocar.ico" sizes="32x32" type="image/x-icon">
@@ -25,7 +28,13 @@
         <a href="#demarcação">Demarcação</a>
         <a href="https://www.instagram.com/cocardofuturo?igsh=eDRtYmg1aWI4MzU1">Instagram</a>
     </nav>
-<h1 id="sobre">Bem-vindo ao projeto integrador do IFS-campus Propriá</h1> 
+<section class="hero" id="sobre">
+    <div class="hero-badge">IFS-campus Propriá · 2025</div>
+    <h1 class="hero-title">Bem-vindo ao<br>Projeto Integrador</h1>
+    <p class="hero-subtitle">Explorando a COP30, a proteção da Amazônia e a luta pelos povos indígenas</p>
+    <div class="hero-scroll">Role para baixo</div>
+    <img src="imagens/jaguar.png" class="hero-jaguar" alt="Onça pintada">
+</section>
 <h1>O que seria a COP30?</h1>
     <section id="cop30" class="conteudo">
        
@@ -51,6 +60,7 @@
             </p>
         </section>
     <!--Seção 1-->
+    <div class="section-divider"></div>
     <h1>Demarcação indigenas</h1>
     <section id="demarcação" class="conteudo">
         <!--texto 1-->
@@ -109,34 +119,16 @@
 
 
 <!-- AVISO DE COOKIES -->
-<div id="cookie-banner" style="
-  position: fixed;
-  bottom: 0;
-  border-radius: 8px 8px 0 0;
-  left: 25%;
-  width: 50%;
-  background: #0b2b26;
-  color: #daf1de;
-  padding: 15px;
-  text-align: center;
-  font-family: Arial;
-  z-index: 9999;
-  display: none;
-  
-  ">
+<div id="cookie-banner">
   Este site usa cookies para melhorar sua experiência.
-  <a href="privacidade.html" style="color: #00f; margin-left: 10px;">Saiba mais</a>
-  <button onclick="aceitarCookies()" style="
-    margin-left: 15px;
-    padding: 7px 15px;
-    border: none;
-    background: green;
-    color: white;
-    cursor: pointer;
-  ">
-    Aceitar
-  </button>
+  <a href="privacidade.html">Saiba mais</a>
+  <button onclick="aceitarCookies()">Aceitar</button>
 </div>
+
+<footer>
+    <strong>Projeto Integrador</strong> · IFS-campus Propriá · 2025<br>
+    <span>Desenvolvido por alunos do Instituto Federal de Sergipe — Campus Propriá</span>
+</footer>
 
 <script>
 function aceitarCookies() {

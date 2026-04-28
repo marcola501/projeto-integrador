@@ -44,5 +44,17 @@ function alterarlayout(){
     
 };
 
+// Scroll-reveal: animate sections into view as the user scrolls
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.conteudo, .unico').forEach(el => revealObserver.observe(el));
+
 window.addEventListener('resize', alterarlayout);
 window.addEventListener('load', alterarlayout);
